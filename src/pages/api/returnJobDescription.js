@@ -8,7 +8,8 @@ const generateDescription = async({
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+                    //update api key
+                    // Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
                 },
                 body: JSON.stringify({
                     prompt: `Write a job description for a ${jobTitle} role ${industry ? `in the ${industry} industry` : ""} that is around ${numWords || 200} words in a ${tone || "neutral"} tone.
